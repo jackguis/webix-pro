@@ -1,6 +1,8 @@
+import i18n from "locale";
+
 export default {
     $ui:{
         view:"text",
-        label:"测试组件"
+        label:i18n("user")
     }
 }

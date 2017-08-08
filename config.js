@@ -3,16 +3,22 @@ System.config({
   defaultJSExtensions: true,
   transpiler: "typescript",
   paths: {
-    "views/*":"modules/*",
+    "views/*": "modules/*",
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-  packages:{
+
+  packages: {
     "modules": {
-      defaultExtension: "ts"
+      "defaultExtension": "ts"
+    },
+    "locales": {
+      "defaultExtension": "ts"
     }
   },
+
   map: {
+    "lodash": "npm:lodash@4.17.4",
     "typescript": "npm:typescript@2.4.2",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
